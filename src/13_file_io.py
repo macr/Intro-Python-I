@@ -17,3 +17,9 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+with open("bar.txt", 'w') as bar:
+    bar.write("a\r\nb\r\nc")
+
+with open("bar.txt") as bar:
+    print(bar.read())
